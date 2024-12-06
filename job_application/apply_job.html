@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-briefcase"></i> Gowork.</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="jobs.html">All Jobs</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Account</a>
+        </nav>
+    </section>
+</header>
+
+<!-- Job Application Form Section -->
+<section class="application-form">
+    <h1 class="heading">Apply for [Job Title]</h1>
+    <form action="submit_application.php" method="post" enctype="multipart/form-data">
+        <div class="flex">
+            <!-- Personal Information -->
+            <div class="box">
+                <label for="name">Full Name <span>*</span></label>
+                <input type="text" name="name" id="name" required class="input" maxlength="50">
+            </div>
+            <div class="box">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="email" id="email" required class="input" maxlength="50">
+            </div>
+            <div class="box">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input type="tel" name="phone" id="phone" required class="input" maxlength="15">
+            </div>
+
+            <!-- Qualifications and Skills -->
+            <div class="box">
+                <label for="experience">Experience (Years) <span>*</span></label>
+                <input type="number" name="experience" id="experience" required class="input" min="0" max="50">
+            </div>
+            <div class="box">
+                <label for="qualifications">Qualifications <span>*</span></label>
+                <textarea name="qualifications" id="qualifications" required class="input" rows="4" maxlength="500"></textarea>
+            </div>
+            <div class="box">
+                <label for="skills">Skills <span>*</span></label>
+                <textarea name="skills" id="skills" required class="input" rows="4" maxlength="500"></textarea>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="box">
+                <label for="resume">Upload Resume (PDF, DOC) <span>*</span></label>
+                <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required class="input">
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Application" class="btn">
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <section class="grid">
+        <!-- Footer content similar to other pages for consistency -->
+    </section>
+</footer>
+
+</body>
+</html>

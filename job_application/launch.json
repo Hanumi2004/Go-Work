@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ComputerHardwareArrayList",
+            "request": "launch",
+            "mainClass": "ComputerHardwareArrayList",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "HardwareManagementSystem",
+            "request": "launch",
+            "mainClass": "HardwareManagementSystem",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "GUI",
+            "request": "launch",
+            "mainClass": "GUI",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "Main2",
+            "request": "launch",
+            "mainClass": "Main2",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "MainComputerHardware",
+            "request": "launch",
+            "mainClass": "MainComputerHardware",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "Randomnumbersmethod",
+            "request": "launch",
+            "mainClass": "Randomnumbersmethod",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "TestStaff",
+            "request": "launch",
+            "mainClass": "TestStaff",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "Teststudent2",
+            "request": "launch",
+            "mainClass": "Teststudent2",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "arrayofprimitive",
+            "request": "launch",
+            "mainClass": "arrayofprimitive",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "calculate",
+            "request": "launch",
+            "mainClass": "calculate",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "createmathformula",
+            "request": "launch",
+            "mainClass": "createmathformula",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "exaption",
+            "request": "launch",
+            "mainClass": "exaption",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci",
+            "request": "launch",
+            "mainClass": "fibonacci",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "ifstatement",
+            "request": "launch",
+            "mainClass": "ifstatement",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "logicaloperator",
+            "request": "launch",
+            "mainClass": "logicaloperator",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "logicaloperator2",
+            "request": "launch",
+            "mainClass": "logicaloperator2",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "operation",
+            "request": "launch",
+            "mainClass": "operation",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "swapvariable",
+            "request": "launch",
+            "mainClass": "swapvariable",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "userinput",
+            "request": "launch",
+            "mainClass": "userinput",
+            "projectName": "VS CODE_16e30912"
+        },
+        {
+            "type": "java",
+            "name": "variable",
+            "request": "launch",
+            "mainClass": "variable",
+            "projectName": "VS CODE_16e30912"
+        }
+    ]
+}

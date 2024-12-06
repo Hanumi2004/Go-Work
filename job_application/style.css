@@ -1,0 +1,1169 @@
+/* font awesome cdn link */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+
+
+/* google fonts cdn link */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color:#2980b9;
+    --red:red;
+    --light-color:#777;
+    --light-bg:#eee;
+    --black:#2c3e50;
+    --white:#fff;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0.2);
+
+
+}
+
+*{
+    font-family: 'Comfprtaa', cursive;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-slider-thumb{
+    background-color: var(--main-color);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--light-bg);
+
+}
+
+section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.btnhover{
+    background: var(--black);
+}
+
+.flex-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.header .flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-btn{
+    font-size: 2.7rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .flex .logo i{
+    margin-right: .5rem;
+    color: var(--light-color);
+
+}
+
+.header .flex .navbar a{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color:var(--light-color);
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.header .flex .navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.home-container{
+    background: url(images/), rgba(0,0,0.7) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.home-container .home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .home form{
+    background-color: var(--white);
+    width: 50rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-container .home form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.home-container .home form p{
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: 1rem;
+}
+
+.home-container .home form p span{
+    color: var(--red);
+}
+
+.home-container .home form .input{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+
+}
+
+/* Centering and styling for the job categories section */
+.category {
+    text-align: center;
+    padding: 2rem;
+}
+
+.category .heading {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.category .box {
+    background: var(--white);
+    border: 1px solid #ddd;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--black);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category .box:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.category .box i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    width: 3rem;
+    text-align: center;
+}
+
+.category .box h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.category .box span {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+/* Jobs Container - Main Grid Layout */
+.jobs-container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Job Card Styling */
+.jobs-container .box {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border: var(--border);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jobs-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+/* Company Logo and Info */
+.jobs-container .company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.jobs-container .company img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.jobs-container .company h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--black);
+    margin: 0;
+}
+
+.jobs-container .company span {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+/* Job Title */
+.jobs-container .job-title {
+    font-size: 1.8rem;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+/* Location */
+.jobs-container .location {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+.jobs-container .location i {
+    margin-right: 0.5rem;
+    color: var(--main-color);
+}
+
+/* Tags Section */
+.jobs-container .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.jobs-container .tags p {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.jobs-container .tags i {
+    margin-right: 0.3rem;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+/* View Details Button */
+.jobs-container .btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.7rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 100%;
+}
+
+.jobs-container .btn:hover {
+    background-color: var(--black);
+}
+
+/* Heart Icon for Save */
+.jobs-container .far.fa-heart {
+    font-size: 1.8rem;
+    color: var(--light-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.jobs-container .far.fa-heart:hover {
+    color: var(--main-color);
+}
+
+/* Aligning View Details Button and Heart Icon */
+.jobs-container .flex-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* About Us Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+/* About Section Styling */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--light-bg);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.about img {
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.about .box {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.about .box h3 {
+    font-size: 2.4rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.about .box p {
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.about .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+}
+
+.about .btn:hover {
+    background-color: var(--black);
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .about img {
+        margin-bottom: 1.5rem;
+        width: 150px;
+    }
+    
+    .about .box {
+        text-align: center;
+    }
+}
+
+/* Reviews Section Styling */
+.reviews {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.reviews .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.reviews .box {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .box .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviews .box .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+.reviews .box .user h3 {
+    font-size: 1.6rem;
+    color: var(--black);
+    margin: 0;
+}
+
+.reviews .box .user span {
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+.reviews .box .stars {
+    margin: 1rem 0;
+}
+
+.reviews .box .stars i {
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+
+.reviews .box .title {
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.reviews .box p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 1.6;
+}
+
+.job-filter form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.job-filter form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.job-filter form .flex .box{
+    flex: 1 1 40rem;
+}
+
+.job-filter form .flex .box p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.job-filter form .flex .box p span{
+    color: var(--red);
+}
+
+.job-filter form .flex .box .input{
+    width: 100%;
+    border-radius: 5rem;
+    padding: 1.4rem;
+    color: var(--black);
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+}
+
+.job-filter form .dropdown-container{
+    margin-top: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.job-filter form .dropdown-container .dropdown{
+    flex: 1 1 20rem;
+    position: relative;
+}
+
+.job-filter form .dropdown-container .dropdown .output{
+    width: 100%;
+    background: var(--light-bg);
+    border-radius: .5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.job-filter form .dropdown-container .dropdown .output:placeholder-shown{
+    text-transform: capitalize;
+}
+
+.job-filter form .dropdown-container .dropdown .lists{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.job-filter form .dropdown-container .dropdown .lists .items{
+    padding : 1.2rem 1.4rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.job-filter form .dropdown-container .dropdown .lists .items:hover{
+    background-color: var(--light-bg);
+}
+
+
+.job-filter form .dropdown-container .dropdown .lists:hover,
+.job-filter form .dropdown-container .dropdown:hover .lists,
+.job-filter form .dropdown-container .dropdown .output:focus + .lists,
+.job-filter form .dropdown-container .dropdown .output:focus-within + .lists{
+    transform: scaleY(1);
+    transition: .2s linear;
+}
+
+.job-details .details {
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    overflow-x: hidden;
+}
+
+.job-details .details h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.job-details .details .job-info a {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    margin: .5rem 0;
+}
+
+.job-details .details .job-info a:hover {
+    text-decoration: underline;
+}
+
+.job-details .details .job-info p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.job-details .details .basic-details {
+    background-color: var(--light-bg);
+    margin: 1.5rem 0;
+    border-radius: .5rem;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.job-details .details .basic-details p {
+    color: var(--light-color);
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.job-details .details ul{
+    margin: 1rem 0;
+}
+
+.job-details .details ul li{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    margin-left: 3rem;
+}
+
+.job-details .details .description{
+    margin-top: 1.5rem;
+}
+
+.job-details .details .description{
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: .5rem 0;
+}
+
+.job-details .details .save {
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.job-details .details .save:hover{
+    background-color: var(--black);
+}
+
+.job-details .details .save i {
+    margin-right: .5rem;
+    color: var(--black);
+}
+
+.job-details .details .save span {
+    color: var(--light-color);
+}
+
+job-details .details .save:hover i{
+    color: var(--white);
+
+}
+
+job-details .details .save:hover span{
+    color: var(--white);
+}
+
+.view-company .details{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.view-company .details .info{
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.view-company .details .info img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+.view-company .details .info h3{
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.view-company .details .info p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+
+.view-company .details .description{
+    margin-top: 2rem;
+}
+
+.view-company .details .description h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+
+.view-company .details .description p{
+    padding: .5rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+
+.view-company .details ul li{
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: 1.5rem;
+
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: var(--light-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Box Container for Contact Information */
+.contact .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact .box {
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact .box i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.contact .box a {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.contact .box a:hover {
+    color: var(--main-color);
+}
+
+/* Contact Form Styling */
+.contact form {
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact form .box {
+    flex: 1 1 45%;
+}
+
+.contact form p {
+    font-size: 1.6rem;
+    color: var(--light-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact form .input {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    background-color: var(--light-bg);
+    border: var(--border);
+    margin-bottom: 1rem;
+}
+
+.contact form textarea.input {
+    height: 10rem;
+    resize: vertical;
+}
+
+.contact form .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact form .btn:hover {
+    background-color: var(--black);
+}
+
+.account-form-container{
+    background: url('../images/'), rgba(0,0,0.7);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.account-form-container .account-form{
+    min-width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-form-container .account-form form{
+    background-color: var(--white);
+    border-radius: 5rem;
+    padding: 2rem;
+    width: 50rem;
+    text-align: center;
+}
+
+.account-form-container .account-form form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.account-form-container .account-form form .input{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    padding: 1.4rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+}
+
+.account-form-container .account-form form p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+
+}
+
+.account-form-container .account-form form p a{
+    color: var(--main-color);
+}
+
+.account-form-container .account-form form p a:hover{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* Job Application Form Styling */
+.application-form {
+    padding: 2rem;
+    background-color: var(--light-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.application-form .heading {
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.application-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.application-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.application-form .box {
+    flex: 1 1 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form .box label {
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.application-form .box span {
+    color: var(--red);
+}
+
+.application-form .box .input {
+    padding: 1.4rem;
+    border-radius: 0.5rem;
+    background-color: var(--light-bg);
+    font-size: 1.6rem;
+    color: var(--black);
+    border: var(--border);
+}
+
+.application-form .box .input[type="file"] {
+    padding: 1rem;
+}
+
+.application-form .box .input:focus {
+    outline: none;
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.2rem rgba(41, 128, 185, 0.2);
+}
+
+.application-form .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+    align-self: center;
+    cursor: pointer;
+}
+
+.application-form .btn:hover {
+    background-color: var(--black);
+}
+
+
+.footer .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.footer .grid .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.footer .grid .box a{
+    display:block;
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.footer .grid .box a i{
+    color: var(--main-color);
+    margin-right: .8rem;
+    transition: .2s linear;
+}
+
+.footer .grid .box a:hover i{
+    margin-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 2 rem;
+    border-top: var(--border);
+    background-color: var(--white);
+    font-size: 2rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+
+/* media quaries */
+@media (max-width:911px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .flex .navbar{
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    border-top: var(--border);
+    background-color: var(--white);
+    padding: 1rem 5.rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .2s linear;
+  }
+
+  .header .flex .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .flex .navbar a{
+    display:block;
+    padding: 1.5rem 2rem;
+}
+
+.category .box-container{
+    grid-template-columns: repeat(auto-fit, 16rem);
+}
+
+.category .box-container .box{
+    flex-flow: column;
+    text-align: center;
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
+}

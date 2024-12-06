@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobs</title>
+
+    <!-- custom css file -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-image: url('images/backgroudn1.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+
+<!--header section strats-->
+
+<header class="header">
+
+    <section class="flex">
+
+        <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+        <a href="home.html class="logo"><i class="fas fa-briefcase"></i>
+        Gowork.</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="jobs.html">all jobs</a>
+            <a href="contact.html">contact us</a>
+            <a href="login.html">account</a>
+        </nav>
+
+        <a href="#" class="btn" style="margin-top: 0;">post job</a>
+
+
+
+    </section>
+</header>
+
+<!--job filter section starts-->
+
+<section class="job-filter">
+
+    <h1 class="heading">filter jobs</h1>
+
+    <form action="" method="post">
+        <div class="flex">
+            <div class="box">
+                <p>job title <span>*</span></p>
+                <input type="text" name="title" placeholder="keyword, category or company" required maxlength="20" class="input">
+            </div>
+            <div class="box">
+                <p>job location <span>*</span></p>
+            <input type="text" name="location" placeholder="city, state or country" required maxlength="50" class="input">
+            </div>
+        </div>
+        <div class="dropdown-container">
+        <div class="dropdown">
+            <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items">today</p>
+                <p class="items">3 days ago</p>
+                <p class="items">7 days ago</p>
+                <p class="items">10 days ago</p>
+                <p class="items">15 days ago</p>
+                <p class="items">30 days ago</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items">full-time</p>
+                <p class="items">part-time</p>
+                <p class="items">internship</p>
+                <p class="items">contract</p>
+                <p class="items">temperary</p>
+                <p class="items">fresher</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <input type="text" readonly name="date" placeholder="education level" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items">form 6</p>
+                <p class="items">foundation</p>
+                <p class="items">bachelor</p>
+                <p class="items">master</p>
+                <p class="items">diploma</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <input type="text" readonly name="date" placeholder="work shifts" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items">day shift</p>
+                <p class="items">night shift</p>
+                <p class="items">flexible shift</p>
+                <p class="items">fixed shift</p>
+            </div>
+        </div>
+        
+        </div>
+    </form>
+
+</section>
+
+<!--all job section starts-->
+
+<section class="jobs-container">
+
+    <h1 class="heading">all jobs</h1>
+    
+   <div class="box-container">
+
+    <div class="box">
+        <div class="company">
+            <img src="images/th (4).jpg" alt="">
+            <div>
+                <h3>IT Infosys Co.</h3>
+                <span>2 days ago</span>
+            </div>
+        </div>
+        <h3 class="job-title">Senior Web Developer</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> <span>KLCC, Kuala Lumpur</span></p>
+        <div class="tags">
+            <p><i class="fas fa-money-bill-wave"></i> <span>RM10K - 15K</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>Part-Time</span></p>
+            <p><i class="fas fa-clock"></i> <span>Day Shift</span></p>
+        </div>
+        <div class="flex-btn">
+            <a href="view_job.html" class="btn">View Details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+        </div>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="box">
+        <div class="company">
+            <img src="images/th (3).jpg" alt="">
+            <div>
+                <h3>Tech Solutions</h3>
+                <span>1 week ago</span>
+            </div>
+        </div>
+        <h3 class="job-title">Junior Software Engineer</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Bangsar, Kuala Lumpur</span></p>
+        <div class="tags">
+            <p><i class="fas fa-money-bill-wave"></i> <span>RM5K - 8K</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>Full-Time</span></p>
+            <p><i class="fas fa-clock"></i> <span>Night Shift</span></p>
+        </div>
+        <div class="flex-btn">
+            <a href="view_job.html" class="btn">View Details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+        </div>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="box">
+        <div class="company">
+            <img src="images/business-consulting-services-logo-design-vector.jpg" alt="">
+            <div>
+                <h3>Green Energy</h3>
+                <span>5 days ago</span>
+            </div>
+        </div>
+        <h3 class="job-title">Project Manager</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Cyberjaya, Selangor</span></p>
+        <div class="tags">
+            <p><i class="fas fa-money-bill-wave"></i> <span>RM12K - 18K</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>Contract</span></p>
+            <p><i class="fas fa-clock"></i> <span>Flexible</span></p>
+        </div>
+        <div class="flex-btn">
+            <a href="view_job.html" class="btn">View Details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+        </div>
+    </div>
+
+    <!-- Job 4 -->
+    <div class="box">
+        <div class="company">
+            <img src="images/6df79510dfded36c22d8d1e1bb32c3e8.jpg" alt="">
+            <div>
+                <h3>Finance Solutions</h3>
+                <span>3 days ago</span>
+            </div>
+        </div>
+        <h3 class="job-title">Financial Analyst</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Petaling Jaya, Selangor</span></p>
+        <div class="tags">
+            <p><i class="fas fa-money-bill-wave"></i> <span>RM8K - 12K</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>Full-Time</span></p>
+            <p><i class="fas fa-clock"></i> <span>Day Shift</span></p>
+        </div>
+        <div class="flex-btn">
+            <a href="view_job.html" class="btn">View Details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+        </div>
+    </div>
+
+    <!-- Job 5 -->
+    <div class="box">
+        <div class="company">
+            <img src="images/th (5).jpg" alt="">
+            <div>
+                <h3>Creative Minds</h3>
+                <span>4 days ago</span>
+            </div>
+        </div>
+        <h3 class="job-title">Graphic Designer</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Subang Jaya, Selangor</span></p>
+        <div class="tags">
+            <p><i class="fas fa-money-bill-wave"></i> <span>RM4K - 6K</span></p>
+            <p><i class="fas fa-briefcase"></i> <span>Part-Time</span></p>
+            <p><i class="fas fa-clock"></i> <span>Remote</span></p>
+        </div>
+        <div class="flex-btn">
+            <a href="view_job.html" class="btn">View Details</a>
+            <button type="submit" class="far fa-heart" name="save"></button>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2;">
+    <a href="jobs.html" class="btn">View All</a>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!--footer section starts-->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i> about</a>
+            <a href="jobs.html"><i class="fas fa-angle-right"></i> all jobs</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i> contact us</a>
+            <a href="#"><i class="fas fa-angle-right"></i> filter search</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i> account</a>
+            <a href="login.html"><i class="fas fa-angle-right"> login</i></a>
+            <a href="register.html"><i class="fas fa-angle-right"></i> register</a>
+            <a href="#"><i class="fas fa-angle-right"></i> post job</a>
+            <a href="#"><i class="fas fa-angle-right"></i> dashboard</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook"> facebook</i></a>
+            <a href="#"><i class="fab fa-twitter"> twitter</i></a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"><i class="fab fa-youtube"></i> youtube</a>
+        </div>
+
+    </section>
+
+    <div class="credit">&copy; copyright @2024 <span>mr. khairil asraf</span> | all rights reserverved!</div>
+
+
+</footer>
+
+
+<!--custom js file link-->
+ <script src="js/script.js"></script>
+
+ <script>
+ let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+ dropdown_items.forEach(items =>{
+    items.onclick = () =>{
+        items_parent = items.parentElement.parentElement;
+        let output = items_parent.querySelector('.output');
+        output.value = items.innerText;
+    }
+});
+
+
+</script>
+</body>
+</html>
